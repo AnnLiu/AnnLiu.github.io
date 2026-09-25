@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ann Liu • Scientific Visualization</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <img class="nav-logo" src="assets/images/AL.png">
+    <a href="index.html">Ann Liu</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="portfolio.html">Portfolio</a>
+
+<!-- <a href="contact.html">Contact</a> -->  
+  </nav>
+</header>
+
+<div class="container">
+  <p style="margin-bottom: 6%;"></p>
+  <section class="hero">
+    <h1>Scientific Visualization & Storytelling</h1>
+    <p>Hi, I am a scientific animator and visual communicator. I create high-fidelity biomedical visualizations, molecular/cellular animations, and data-driven narratives using Maya, Blender, and Adobe software. </p>
+  </section>
+
+  <div class="project-card">
+    <img class="overlay-image" src="assets/images/Final7.png"  width="90%"   draggable="false" oncontextmenu="return false;">
+
+	  <div class="carousel">
+      <div class="carousel-track">
+
+        <img src="assets/images/NeuronalMitophagy.png" draggable="false" oncontextmenu="return false;">
+        <img src="assets/images/GETpathway.png" draggable="false" oncontextmenu="return false;"> 
+        <img src="assets/images/LRRK2.png" draggable="false" oncontextmenu="return false;">
+        <img src="assets/images/Covid19LifeCycle.png" draggable="false" oncontextmenu="return false;">
+        <img src="assets/images/OSN.png" draggable="false" oncontextmenu="return false;">
+        <img src="assets/images/NLRP3.png" draggable="false" oncontextmenu="return false;">
+        <img src="assets/images/elongation.png" draggable="false" oncontextmenu="return false;">
+
+      </div>
+    </div>
+
+
+	</div>
+
+  
+<section class="container">
+  <p style="margin-bottom: 45%;"></p>
+  <h2>Background</h2>
+  <p>I received my PhD in Evolutionary Genetics from the University of Otago and my MSc in Biomedical Visualization from the University of Illinois Chicago. 
+    I then joined the <a href="https://animationlab.utah.edu/" target="_blank" rel="noopener"> Animation Lab</a>
+    as a Postdoctoral Fellow and later served as a faculty member at the University of Science and Technology of China. 
+    Now I am a Research Assistant Professor in the Animation Lab.</p>
+
+  <h2>Areas of Focus</h2>
+  <ul>
+    <li>Molecular & cellular animation</li>
+    <li>Data-driven scientific storytelling</li>
+    <li>Developing resources and tools for scientific visualization and communication</li>
+  </ul>
+
+ <!-- <h2>Current Direction</h2>
+  <li>Protein structural visualization and conformational modeling</li>
+
+  <p>Integrating scientific accuracy with cinematic clarity, and developing tools for educational and research visualization—particularly for large-scale protein assemblies.</p>
+ -->  
+  <h2>Contact</h2>
+  <ul>
+    <li>Email: annliu7@gmail.com</li>
+    <li>GitHub: https://github.com/yourprofile</li>
+  </ul>
+</section>
+
+</div>
+  
+
+<footer>© 2026 Ann Liu. All Rights Reserved.</footer>
+</body>
+</html>
+
+<script>
+  const track = document.querySelector(".carousel-track");
+  const slides = Array.from(track.children);
+
+  let index = 0;
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  // 每 5 秒自动播放下一张
+  setInterval(() => {
+    index = (index + 1) % slides.length;
+    updateCarousel();
+  }, 3000);
+</script>
+
