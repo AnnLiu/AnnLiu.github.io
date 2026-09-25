@@ -1,0 +1,177 @@
+/* —— 基础 —— */
+body {
+  margin: 10px;
+  font-family: "Inter", Arial, sans-serif;
+  background: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: "Georgia", "Times New Roman", serif;
+  transform: scaleX(0.9);
+  transform-origin: left center;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #0d0d0d;
+}
+
+h3 {
+  font-family: "Times New Roman", serif;
+    transform: scaleX(1.0);
+  transform-origin: left center;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #0d0d0d;
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  /* border-left: 4px solid #2b59c3;   科研感的蓝色 */
+  padding-left: 0px;
+  margin-top: 40px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+li {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+p {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+/* —— 顶部导航 —— */
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  max-width: 1050px;
+  margin: auto;
+  display: flex;
+  gap: 5px;
+  font-size: 1.5rem;
+}
+
+.nav-logo {
+  min-width: 3%;
+  width: 35px;
+  height: auto;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #2b59c3;
+}
+
+/* —— 版心 —— */
+.container {
+  position: relative;
+  max-width: 1050px;
+  margin: auto;
+  padding: 5px 0px;
+}
+
+/* —— 首页hero —— */
+.hero {
+  margin-top: 15px;
+  padding: 5px 0;
+}
+
+.hero h1 {
+  font-size-adjust: 3rem ;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  max-width: 100%;
+}
+
+
+/* —— 卡片式项目 —— */
+.project-card {
+  background: #f8f9fb;
+  border-radius: 0px;
+  padding: 0px;
+  margin: 0px 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+
+/* —— Carousel —— */
+.carousel {
+  position: absolute;
+  max-width: 38%;
+  margin-top: 5.5%;
+  margin-left: 35.5%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-track img {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+
+.overlay-image {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  max-width: 80%;
+  height: auto;
+
+  /* Allows carousel buttons beneath it to remain clickable */
+  pointer-events: none;
+}
+
+
+footer {
+  position: relative;
+  margin-top: 100px;
+  padding: 25px;
+  text-align: center;
+  background: #f3f4f6;
+  color: #666;
+  font-size: 0.9rem;
+}
