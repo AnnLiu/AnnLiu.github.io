@@ -42,11 +42,8 @@
 
       </div>
     </div>
-
-
 	</div>
 
-  
 <section class="container">
   <p style="margin-bottom: 45%;"></p>
   <h2>Background</h2>
@@ -94,8 +91,7 @@ dialogue. PLOS Biology, 20(8), e3001731.<br>
     track.style.transform = `translateX(-${index * 100}%)`;
   }
 
-  // 每 5 秒自动播放下一张
-  setInterval(() => {
+   setInterval(() => {
     index = (index + 1) % slides.length;
     updateCarousel();
   }, 3000);
